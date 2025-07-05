@@ -1,5 +1,5 @@
 {
-  "name": "@use-hall/bot-gate",
+  "name": "@usehall/bot-gate",
   "version": "1.0.0",
   "description": "React/Vue/Svelte components for conditionally rendering content based on bot detection with IP validation",
   "main": "dist/core/index.js",
@@ -24,7 +24,7 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "test": "vitest",
+    "test": "vitest --run",
     "test:watch": "vitest --watch",
     "test:coverage": "vitest --coverage",
     "test:ui": "vitest --ui",
