@@ -45,6 +45,9 @@
   "author": "Hall",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-node-resolve": "^15.0.0",
     "@rollup/plugin-typescript": "^11.0.0",
@@ -56,6 +59,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "rollup": "^4.0.0",
+    "rollup-plugin-svelte": "^7.2.2",
     "typescript": "^5.0.0",
     "vitest": "^1.0.0",
     "vue": "^3.0.0"
