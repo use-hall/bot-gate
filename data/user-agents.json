@@ -1,0 +1,81 @@
+{
+  "bots": [
+    {
+      "name": "googlebot",
+      "type": "search",
+      "patterns": [
+        "googlebot"
+      ]
+    },
+    {
+      "name": "bingbot",
+      "type": "search",
+      "patterns": [
+        "bingbot"
+      ]
+    },
+    {
+      "name": "oai-searchbot",
+      "type": "ai",
+      "patterns": [
+        "oai-searchbot"
+      ]
+    },
+    {
+      "name": "chatgpt-user",
+      "type": "ai",
+      "patterns": [
+        "chatgpt-user"
+      ]
+    },
+    {
+      "name": "gptbot",
+      "type": "ai",
+      "patterns": [
+        "gptbot"
+      ]
+    },
+    {
+      "name": "perplexitybot",
+      "type": "ai",
+      "patterns": [
+        "perplexitybot"
+      ]
+    },
+    {
+      "name": "perplexity-user",
+      "type": "ai",
+      "patterns": [
+        "perplexity-user"
+      ]
+    },
+    {
+      "name": "applebot",
+      "type": "search",
+      "patterns": [
+        "applebot"
+      ]
+    },
+    {
+      "name": "applebot-extended",
+      "type": "ai",
+      "patterns": [
+        "applebot-extended"
+      ]
+    },
+    {
+      "name": "duckassistbot",
+      "type": "ai",
+      "patterns": [
+        "duckassistbot"
+      ]
+    },
+    {
+      "name": "duckduckbot",
+      "type": "search",
+      "patterns": [
+        "duckduckbot"
+      ]
+    }
+  ]
+}
