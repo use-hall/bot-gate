@@ -44,6 +44,14 @@
   ],
   "author": "Hall",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/use-hall/bot-gate.git"
+  },
+  "homepage": "https://github.com/use-hall/bot-gate",
+  "bugs": {
+    "url": "https://github.com/use-hall/bot-gate/issues"
+  },
   "devDependencies": {
     "@babel/core": "^7.28.0",
     "@babel/preset-react": "^7.27.1",
