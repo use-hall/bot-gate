@@ -11,10 +11,6 @@ export type SupportedBotName =
   | 'duckassistbot'
   | 'duckduckbot';
 
-export interface BotDetectionOptions {
-  bots?: SupportedBotName[] | null;
-  sanitizeIp?: boolean;
-}
 
 export interface BotGateProps {
   userAgent: string;
