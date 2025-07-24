@@ -1,4 +1,6 @@
 import { SvelteComponentTyped } from 'svelte';
 import { BotGateProps } from '../../types';
 
-export class BotGate extends SvelteComponentTyped<BotGateProps> {}
+export interface SvelteBotGateProps extends BotGateProps {}
+
+export class BotGate extends SvelteComponentTyped<SvelteBotGateProps, {}, {}> {}

@@ -4,27 +4,27 @@ import { sanitizeIpAddress } from './utils.js';
 
 export function validateBotGateProps(userAgent, ipAddress, display, role) {
   if (!userAgent || !ipAddress) {
-    console.warn('BotGate: userAgent and ipAddress are required props');
+    console.warn(`bot-gate: Missing required props. userAgent: ${userAgent ? 'provided' : 'missing'}, ipAddress: ${ipAddress ? 'provided' : 'missing'}. Both are required for bot detection.`);
     return { isValid: false, error: 'missing_required_props' };
   }
 
   if (!display) {
-    console.warn('BotGate: display prop is required ("show" or "hide")');
+    console.warn('bot-gate: display prop is required. Must be either "show" or "hide" to control content visibility.');
     return { isValid: false, error: 'missing_display' };
   }
 
   if (!role) {
-    console.warn('BotGate: role prop is required ("bot" or "user")');
+    console.warn('bot-gate: role prop is required. Must be either "bot" or "user" to specify the target audience.');
     return { isValid: false, error: 'missing_role' };
   }
 
   if (!['show', 'hide'].includes(display)) {
-    console.warn('BotGate: display must be either "show" or "hide"');
+    console.warn(`bot-gate: Invalid display value "${display}". Must be either "show" (to display content) or "hide" (to hide content).`);
     return { isValid: false, error: 'invalid_display' };
   }
 
   if (!['bot', 'user'].includes(role)) {
-    console.warn('BotGate: role must be either "bot" or "user"');
+    console.warn(`bot-gate: Invalid role value "${role}". Must be either "bot" (for search engines/crawlers) or "user" (for human visitors).`);
     return { isValid: false, error: 'invalid_role' };
   }
 

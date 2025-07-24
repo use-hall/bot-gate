@@ -1,4 +1,8 @@
 import React from 'react';
 import { BotGateProps } from '../../types';
 
-export function BotGate(props: BotGateProps & { children?: React.ReactNode }): React.ReactElement;
+export interface ReactBotGateProps extends BotGateProps {
+  children?: React.ReactNode;
+}
+
+export function BotGate(props: ReactBotGateProps): React.ReactElement | null;

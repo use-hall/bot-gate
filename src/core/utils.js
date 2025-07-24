@@ -11,8 +11,19 @@ export function warnIfClientSide() {
 export function sanitizeIpAddress(ipAddress) {
   if (!ipAddress || typeof ipAddress !== 'string') return null;
   
-  return ipAddress.trim()
+  let sanitized = ipAddress.trim()
     .split(',')[0]
-    .trim()
-    .replace(/^::ffff:/, '');
+    .trim();
+  
+  // Remove IPv4-mapped IPv6 prefix if present
+  if (sanitized.startsWith('::ffff:')) {
+    sanitized = sanitized.replace(/^::ffff:/, '');
+  }
+  
+  // Handle IPv6 addresses enclosed in brackets (common in HTTP headers)
+  if (sanitized.startsWith('[') && sanitized.endsWith(']')) {
+    sanitized = sanitized.slice(1, -1);
+  }
+  
+  return sanitized;
 }
