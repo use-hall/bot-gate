@@ -59,10 +59,12 @@ jobs:
       
       - name: Create release tag
         if: steps.git-check.outputs.changes == 'true'
+        id: version
         run: |
           VERSION=$(node -p "require('./package.json').version")
           git tag "v$VERSION"
           git push origin "v$VERSION"
+          echo "new_version=$VERSION" >> $GITHUB_OUTPUT
       
       - name: Publish to npm
         if: steps.git-check.outputs.changes == 'true'
