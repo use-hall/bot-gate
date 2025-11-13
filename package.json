@@ -1,6 +1,6 @@
 {
   "name": "@usehall/bot-gate",
-  "version": "1.0.76",
+  "version": "1.0.77",
   "description": "React/Vue/Svelte components for conditionally rendering content based on bot detection with IP validation",
   "main": "dist/core/index.js",
   "type": "module",
